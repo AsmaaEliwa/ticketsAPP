@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct TickerChangesView: View {
+    @ObservedObject var networkManger:NetworkManger
+    init(){
+        networkManger = NetworkManger.shared
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            if let dataModel = networkManger.Changes {
+                Text("Symbol: \(dataModel.displaySymbol)")
+                Text("Last Price: \(dataModel.last)")
+                Text("High: \(dataModel.high)")
+                Text("Low: \(dataModel.low)")
+                
+                
+            }
+        }
     }
 }
-
 #Preview {
     TickerChangesView()
 }

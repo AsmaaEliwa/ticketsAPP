@@ -22,6 +22,7 @@
 		7F3494832B559FF7007D2CD1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3494822B559FF7007D2CD1 /* HomeView.swift */; };
 		7F3494852B55AABF007D2CD1 /* ALLTickerDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3494842B55AABF007D2CD1 /* ALLTickerDataView.swift */; };
 		7F3494872B55AC73007D2CD1 /* TickerChangesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3494862B55AC73007D2CD1 /* TickerChangesView.swift */; };
+		7F3494892B55BBE3007D2CD1 /* ChangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3494882B55BBE3007D2CD1 /* ChangeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		7F3494822B559FF7007D2CD1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7F3494842B55AABF007D2CD1 /* ALLTickerDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALLTickerDataView.swift; sourceTree = "<group>"; };
 		7F3494862B55AC73007D2CD1 /* TickerChangesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerChangesView.swift; sourceTree = "<group>"; };
+		7F3494882B55BBE3007D2CD1 /* ChangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				7F3494822B559FF7007D2CD1 /* HomeView.swift */,
 				7F3494842B55AABF007D2CD1 /* ALLTickerDataView.swift */,
 				7F3494862B55AC73007D2CD1 /* TickerChangesView.swift */,
+				7F3494882B55BBE3007D2CD1 /* ChangeModel.swift */,
 			);
 			path = ticketsAPP;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F34947F2B559B26007D2CD1 /* DataModel.swift in Sources */,
+				7F3494892B55BBE3007D2CD1 /* ChangeModel.swift in Sources */,
 				7F3494852B55AABF007D2CD1 /* ALLTickerDataView.swift in Sources */,
 				7F34947D2B559A03007D2CD1 /* NetworkManger.swift in Sources */,
 				7F3494552B559628007D2CD1 /* Persistence.swift in Sources */,

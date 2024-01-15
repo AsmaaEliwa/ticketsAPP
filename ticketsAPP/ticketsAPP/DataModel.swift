@@ -36,3 +36,5 @@ struct PercentData: Codable {
 struct AllTicketDataModel: Codable {
     var currencyPairs: [String: CurrencyPair?]
 }
+
+

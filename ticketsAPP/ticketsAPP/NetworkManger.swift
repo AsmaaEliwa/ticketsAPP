@@ -9,8 +9,10 @@ import Foundation
 class NetworkManger:ObservableObject{
     static let shared = NetworkManger()
     @Published var alldata :[String: CurrencyPair] = [:]
+    @Published var Changes: ChangeModel?
     private init(){
         getAllTicketData()
+        getAllTickerChanges()
     }
     func getAllTicketData(){
         let url = "https://bitcoinaverage-global-ethereum-index-v1.p.rapidapi.com/indices/local/ticker/all"
@@ -23,9 +25,7 @@ class NetworkManger:ObservableObject{
                     DispatchQueue.main.sync{
                         self.alldata = result
                     }
-                    for (symbol, currencyPair) in result {
-                                          print("Symbol: \(symbol), Last Price: \(currencyPair.last ?? 0.0)")
-                                      }
+             
                     
                 }catch{
                     print(error)
@@ -34,4 +34,31 @@ class NetworkManger:ObservableObject{
             }
         }
     }
+    
+    
+    func getAllTickerChanges(){
+        let url = "https://bitcoinaverage-global-ethereum-index-v1.p.rapidapi.com/indices/local/ticker/ETHUSD/changes"
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        APIManger.shared.getRequest(url: url) { data in
+            
+            if let jsonData = data{
+                do {
+                    let result =  try decoder.decode(ChangeModel.self, from: jsonData)
+                    
+                    DispatchQueue.main.sync{
+                        self.Changes = result
+                        
+                    }
+           
+                }catch{
+                    print(error)
+                    
+                }
+            }
+        }
+    }
+    
+    
+    
 }
