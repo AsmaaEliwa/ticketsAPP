@@ -16,6 +16,12 @@
 		7F3494622B559628007D2CD1 /* ticketsAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3494612B559628007D2CD1 /* ticketsAPPTests.swift */; };
 		7F34946C2B559628007D2CD1 /* ticketsAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F34946B2B559628007D2CD1 /* ticketsAPPUITests.swift */; };
 		7F34946E2B559628007D2CD1 /* ticketsAPPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F34946D2B559628007D2CD1 /* ticketsAPPUITestsLaunchTests.swift */; };
+		7F34947B2B5596D6007D2CD1 /* APIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F34947A2B5596D6007D2CD1 /* APIManger.swift */; };
+		7F34947D2B559A03007D2CD1 /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F34947C2B559A03007D2CD1 /* NetworkManger.swift */; };
+		7F34947F2B559B26007D2CD1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F34947E2B559B26007D2CD1 /* DataModel.swift */; };
+		7F3494832B559FF7007D2CD1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3494822B559FF7007D2CD1 /* HomeView.swift */; };
+		7F3494852B55AABF007D2CD1 /* ALLTickerDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3494842B55AABF007D2CD1 /* ALLTickerDataView.swift */; };
+		7F3494872B55AC73007D2CD1 /* TickerChangesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3494862B55AC73007D2CD1 /* TickerChangesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		7F3494672B559628007D2CD1 /* ticketsAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ticketsAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F34946B2B559628007D2CD1 /* ticketsAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticketsAPPUITests.swift; sourceTree = "<group>"; };
 		7F34946D2B559628007D2CD1 /* ticketsAPPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticketsAPPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F34947A2B5596D6007D2CD1 /* APIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManger.swift; sourceTree = "<group>"; };
+		7F34947C2B559A03007D2CD1 /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
+		7F34947E2B559B26007D2CD1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7F3494822B559FF7007D2CD1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7F3494842B55AABF007D2CD1 /* ALLTickerDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALLTickerDataView.swift; sourceTree = "<group>"; };
+		7F3494862B55AC73007D2CD1 /* TickerChangesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerChangesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,12 @@
 				7F3494542B559628007D2CD1 /* Persistence.swift */,
 				7F3494562B559628007D2CD1 /* ticketsAPP.xcdatamodeld */,
 				7F3494512B559628007D2CD1 /* Preview Content */,
+				7F34947A2B5596D6007D2CD1 /* APIManger.swift */,
+				7F34947C2B559A03007D2CD1 /* NetworkManger.swift */,
+				7F34947E2B559B26007D2CD1 /* DataModel.swift */,
+				7F3494822B559FF7007D2CD1 /* HomeView.swift */,
+				7F3494842B55AABF007D2CD1 /* ALLTickerDataView.swift */,
+				7F3494862B55AC73007D2CD1 /* TickerChangesView.swift */,
 			);
 			path = ticketsAPP;
 			sourceTree = "<group>";
@@ -263,9 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F34947F2B559B26007D2CD1 /* DataModel.swift in Sources */,
+				7F3494852B55AABF007D2CD1 /* ALLTickerDataView.swift in Sources */,
+				7F34947D2B559A03007D2CD1 /* NetworkManger.swift in Sources */,
 				7F3494552B559628007D2CD1 /* Persistence.swift in Sources */,
 				7F34944E2B559624007D2CD1 /* ContentView.swift in Sources */,
+				7F34947B2B5596D6007D2CD1 /* APIManger.swift in Sources */,
+				7F3494832B559FF7007D2CD1 /* HomeView.swift in Sources */,
 				7F34944C2B559624007D2CD1 /* ticketsAPPApp.swift in Sources */,
+				7F3494872B55AC73007D2CD1 /* TickerChangesView.swift in Sources */,
 				7F3494582B559628007D2CD1 /* ticketsAPP.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
