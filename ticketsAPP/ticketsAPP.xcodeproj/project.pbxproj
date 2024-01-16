@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7F34944C2B559624007D2CD1 /* ticketsAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F34944B2B559624007D2CD1 /* ticketsAPPApp.swift */; };
-		7F34944E2B559624007D2CD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F34944D2B559624007D2CD1 /* ContentView.swift */; };
 		7F3494502B559628007D2CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F34944F2B559628007D2CD1 /* Assets.xcassets */; };
 		7F3494532B559628007D2CD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3494522B559628007D2CD1 /* Preview Assets.xcassets */; };
 		7F3494552B559628007D2CD1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3494542B559628007D2CD1 /* Persistence.swift */; };
@@ -45,7 +44,6 @@
 /* Begin PBXFileReference section */
 		7F3494482B559624007D2CD1 /* ticketsAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ticketsAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F34944B2B559624007D2CD1 /* ticketsAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticketsAPPApp.swift; sourceTree = "<group>"; };
-		7F34944D2B559624007D2CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F34944F2B559628007D2CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F3494522B559628007D2CD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F3494542B559628007D2CD1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -113,18 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				7F34944B2B559624007D2CD1 /* ticketsAPPApp.swift */,
-				7F34944D2B559624007D2CD1 /* ContentView.swift */,
 				7F34944F2B559628007D2CD1 /* Assets.xcassets */,
 				7F3494542B559628007D2CD1 /* Persistence.swift */,
 				7F3494562B559628007D2CD1 /* ticketsAPP.xcdatamodeld */,
 				7F3494512B559628007D2CD1 /* Preview Content */,
-				7F34947A2B5596D6007D2CD1 /* APIManger.swift */,
-				7F34947C2B559A03007D2CD1 /* NetworkManger.swift */,
-				7F34947E2B559B26007D2CD1 /* DataModel.swift */,
-				7F3494822B559FF7007D2CD1 /* HomeView.swift */,
-				7F3494842B55AABF007D2CD1 /* ALLTickerDataView.swift */,
-				7F3494862B55AC73007D2CD1 /* TickerChangesView.swift */,
-				7F3494882B55BBE3007D2CD1 /* ChangeModel.swift */,
+				7F34948B2B56B813007D2CD1 /* APIDataManger */,
+				7F34948A2B56B806007D2CD1 /* Model */,
+				7F34948C2B56B824007D2CD1 /* View */,
 			);
 			path = ticketsAPP;
 			sourceTree = "<group>";
@@ -152,6 +145,34 @@
 				7F34946D2B559628007D2CD1 /* ticketsAPPUITestsLaunchTests.swift */,
 			);
 			path = ticketsAPPUITests;
+			sourceTree = "<group>";
+		};
+		7F34948A2B56B806007D2CD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F34947E2B559B26007D2CD1 /* DataModel.swift */,
+				7F3494882B55BBE3007D2CD1 /* ChangeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F34948B2B56B813007D2CD1 /* APIDataManger */ = {
+			isa = PBXGroup;
+			children = (
+				7F34947A2B5596D6007D2CD1 /* APIManger.swift */,
+				7F34947C2B559A03007D2CD1 /* NetworkManger.swift */,
+			);
+			path = APIDataManger;
+			sourceTree = "<group>";
+		};
+		7F34948C2B56B824007D2CD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F3494822B559FF7007D2CD1 /* HomeView.swift */,
+				7F3494842B55AABF007D2CD1 /* ALLTickerDataView.swift */,
+				7F3494862B55AC73007D2CD1 /* TickerChangesView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +310,6 @@
 				7F3494852B55AABF007D2CD1 /* ALLTickerDataView.swift in Sources */,
 				7F34947D2B559A03007D2CD1 /* NetworkManger.swift in Sources */,
 				7F3494552B559628007D2CD1 /* Persistence.swift in Sources */,
-				7F34944E2B559624007D2CD1 /* ContentView.swift in Sources */,
 				7F34947B2B5596D6007D2CD1 /* APIManger.swift in Sources */,
 				7F3494832B559FF7007D2CD1 /* HomeView.swift in Sources */,
 				7F34944C2B559624007D2CD1 /* ticketsAPPApp.swift in Sources */,
